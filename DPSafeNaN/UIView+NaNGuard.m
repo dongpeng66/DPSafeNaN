@@ -172,7 +172,7 @@
 }
 #pragma mark - safe
 - (CGFloat)safeValue:(CGFloat)safeValue defaultValue:(CGFloat)defaultValue {
-    if ([self isnanOrinf:safeValue] || [self isnanOrinf:safeValue] || safeValue < 0) {
+    if ([self isnanOrinf:safeValue] || safeValue < 0) {
         return defaultValue;
     }
     return safeValue;
